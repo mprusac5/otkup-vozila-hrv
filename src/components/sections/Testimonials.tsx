@@ -34,13 +34,13 @@ const testimonials = [
 
 export const Testimonials = () => {
   return (
-    <section className="py-24 bg-gradient-to-b from-background to-secondary relative overflow-hidden" id="testimonials">
+    <section className="py-16 sm:py-20 md:py-24 bg-gradient-to-b from-background to-secondary relative overflow-hidden" id="testimonials">
       {/* Decorative elements */}
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent" />
       
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="text-center mb-12 sm:mb-16 animate-fade-in">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-foreground">
             Što kažu naši klijenti
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -48,7 +48,7 @@ export const Testimonials = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 max-w-7xl mx-auto">
           {testimonials.map((testimonial, index) => (
             <Card 
               key={index}
@@ -87,7 +87,7 @@ export const Testimonials = () => {
         </div>
 
         {/* Stats Section */}
-        <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+        <div className="mt-16 sm:mt-20 grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 max-w-4xl mx-auto">
           <div className="text-center p-8 bg-background rounded-2xl shadow-lg animate-fade-in">
             <div className="text-5xl font-bold text-primary mb-2">500+</div>
             <div className="text-muted-foreground">Zadovoljnih klijenata</div>

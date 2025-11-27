@@ -20,19 +20,19 @@ export const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-4 py-20 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 py-16 sm:py-20 relative z-10">
         <div className="max-w-3xl animate-fade-in">
           <div className="inline-block mb-6 px-4 py-2 bg-accent/10 border border-accent/30 rounded-full">
-            <span className="text-accent font-semibold text-sm">⚡ Isplata u roku od 30-60 minuta</span>
+            <span className="text-accent font-semibold text-sm">⚡ Gotovina na ruke odmah</span>
           </div>
           
-          <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 leading-tight">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-tight">
             Prodajte auto
             <br />
             <span className="text-primary">brzo i sigurno</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl leading-relaxed">
+          <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl leading-relaxed">
             Trenutna isplata, najbolje cijene, bez papirologije. 
             Dolazimo na vašu lokaciju bilo gdje u Hrvatskoj.
           </p>

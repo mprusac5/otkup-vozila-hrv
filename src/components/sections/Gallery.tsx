@@ -6,20 +6,20 @@ import car5 from "@/assets/gallery/car-5.jpg";
 import car6 from "@/assets/gallery/car-6.jpg";
 
 const galleryImages = [
-  { src: car1, alt: "Luksuzni sedan automobil" },
-  { src: car2, alt: "Sportski SUV automobil" },
-  { src: car3, alt: "Kompaktni gradski automobil" },
-  { src: car4, alt: "Premium limuzina" },
-  { src: car5, alt: "Obiteljski kombi" },
-  { src: car6, alt: "Pickup kamionet" },
+  { src: car1, alt: "Novi luksuzni automobil u salonu" },
+  { src: car2, alt: "Polovan sedan ispred kuće" },
+  { src: car3, alt: "VW Caddy kombi na parkingu" },
+  { src: car4, alt: "Stariji model ispred garaže" },
+  { src: car5, alt: "SUV u prirodnom okruženju" },
+  { src: car6, alt: "Gradski hatchback na ulici" },
 ];
 
 export const Gallery = () => {
   return (
-    <section className="py-24 bg-gradient-to-b from-background to-secondary" id="gallery">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
+    <section className="py-16 sm:py-20 md:py-24 bg-gradient-to-b from-background to-secondary" id="gallery">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="text-center mb-12 sm:mb-16 animate-fade-in">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-foreground">
             Galerija otkupljenih vozila
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -27,7 +27,7 @@ export const Gallery = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-7xl mx-auto">
           {galleryImages.map((image, index) => (
             <div 
               key={index} 

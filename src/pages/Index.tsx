@@ -5,6 +5,7 @@ import { Services } from "@/components/sections/Services";
 import { Gallery } from "@/components/sections/Gallery";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { About } from "@/components/sections/About";
+import { FAQ } from "@/components/sections/FAQ";
 import { Contact } from "@/components/sections/Contact";
 import { Footer } from "@/components/sections/Footer";
 import { FloatingContacts } from "@/components/FloatingContacts";
@@ -19,6 +20,7 @@ const Index = () => {
       <Gallery />
       <Testimonials />
       <About />
+      <FAQ />
       <Contact />
       <Footer />
       <FloatingContacts />

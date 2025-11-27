@@ -43,16 +43,16 @@ export const Contact = () => {
   };
 
   return (
-    <section className="py-24 bg-gradient-to-b from-secondary to-background relative overflow-hidden" id="contact">
+    <section className="py-16 sm:py-20 md:py-24 bg-gradient-to-b from-secondary to-background relative overflow-hidden" id="contact">
       {/* Decorative background */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-primary rounded-full blur-3xl" />
         <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-accent rounded-full blur-3xl" />
       </div>
 
-      <div className="container mx-auto px-4 max-w-6xl relative z-10">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
+      <div className="container mx-auto px-4 sm:px-6 max-w-6xl relative z-10">
+        <div className="text-center mb-12 sm:mb-16 animate-fade-in">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-foreground">
             Kontaktirajte nas
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -60,9 +60,9 @@ export const Contact = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12">
           {/* Contact Form */}
-          <div className="bg-background p-8 md:p-10 rounded-3xl shadow-2xl border border-border animate-slide-in-left">
+          <div className="bg-background p-6 sm:p-8 md:p-10 rounded-3xl shadow-2xl border border-border animate-slide-in-left">
             <h3 className="text-2xl font-bold mb-6 text-foreground">
               Zatražite besplatnu ponudu
             </h3>

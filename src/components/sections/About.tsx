@@ -2,10 +2,10 @@ import { Building2, Shield, Users, Target, Award, TrendingUp } from "lucide-reac
 
 export const About = () => {
   return (
-    <section className="py-24 bg-gradient-to-b from-secondary to-background" id="about">
-      <div className="container mx-auto px-4 max-w-6xl">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
+    <section className="py-16 sm:py-20 md:py-24 bg-gradient-to-b from-secondary to-background" id="about">
+      <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
+        <div className="text-center mb-12 sm:mb-16 animate-fade-in">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-foreground">
             O nama
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -13,9 +13,9 @@ export const About = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center mb-12 sm:mb-16">
           {/* Left side - Icons grid */}
-          <div className="grid grid-cols-2 gap-6 animate-slide-in-left">
+          <div className="grid grid-cols-2 gap-4 sm:gap-6 animate-slide-in-left">
             <div className="bg-background p-8 rounded-2xl shadow-lg hover-lift text-center">
               <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center">
                 <Building2 className="h-8 w-8 text-white" />
