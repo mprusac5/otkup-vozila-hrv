@@ -10,10 +10,10 @@ const features = [
 
 export const Services = () => {
   return (
-    <section className="py-24 bg-background relative" id="services">
-      <div className="container mx-auto px-4 max-w-6xl">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
+    <section className="py-16 sm:py-20 md:py-24 bg-background relative" id="services">
+      <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
+        <div className="text-center mb-12 sm:mb-16 animate-fade-in">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-foreground">
             Otkup automobila u Hrvatskoj
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -21,7 +21,7 @@ export const Services = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center mb-12 sm:mb-16">
           {/* Left side - Main text */}
           <div className="space-y-6 animate-slide-in-left">
             <p className="text-lg text-muted-foreground leading-relaxed">

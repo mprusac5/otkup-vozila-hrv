@@ -35,15 +35,15 @@ const benefits = [
   {
     icon: Clock,
     title: "Brza i jednostavna procedura",
-    description: "Cijeli proces traje 30-60 minuta od dolaska do isplate",
+    description: "Minimalna papirologja, maksimalna efikasnost — isplata isti dan",
     color: "text-cyan-500"
   }
 ];
 
 export const Benefits = () => {
   return (
-    <section className="py-24 bg-gradient-to-b from-background to-secondary" id="benefits">
-      <div className="container mx-auto px-4">
+    <section className="py-16 sm:py-20 md:py-24 bg-gradient-to-b from-background to-secondary" id="benefits">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
             Zašto odabrati nas?

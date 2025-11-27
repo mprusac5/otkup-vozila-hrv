@@ -15,8 +15,8 @@ export const Footer = () => {
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-accent rounded-full blur-3xl" />
       </div>
 
-      <div className="container mx-auto px-4 py-16 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+      <div className="container mx-auto px-4 sm:px-6 py-12 sm:py-16 relative z-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12 mb-8 sm:mb-12">
           {/* Company Info */}
           <div className="space-y-6">
             <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
@@ -143,16 +143,16 @@ export const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-background/20 pt-8">
+        <div className="border-t border-background/20 pt-6 sm:pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-background/70 text-sm text-center md:text-left">
               © {new Date().getFullYear()} Otkup Automobila. Sva prava pridržana.
             </p>
-            <div className="flex gap-6 text-sm text-background/70">
+            <div className="flex flex-wrap justify-center gap-3 sm:gap-6 text-sm text-background/70">
               <span>15+ godina iskustva</span>
-              <span>•</span>
+              <span className="hidden sm:inline">•</span>
               <span>500+ zadovoljnih klijenata</span>
-              <span>•</span>
+              <span className="hidden sm:inline">•</span>
               <span>Diljem Hrvatske</span>
             </div>
           </div>
