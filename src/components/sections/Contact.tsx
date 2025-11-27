@@ -3,9 +3,11 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import { Phone, Mail, MapPin, Send } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { Send, Phone, Mail, MapPin } from "lucide-react";
 
 export const Contact = () => {
+  const { elementRef, isVisible } = useScrollAnimation();
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -43,7 +45,13 @@ export const Contact = () => {
   };
 
   return (
-    <section className="py-16 sm:py-20 md:py-24 bg-gradient-to-b from-secondary to-background relative overflow-hidden" id="contact">
+    <section 
+      ref={elementRef}
+      id="contact" 
+      className={`py-16 sm:py-20 md:py-24 bg-gradient-to-b from-secondary to-background relative overflow-hidden transition-all duration-1000 ${
+        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+      }`}
+    >
       {/* Decorative background */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-primary rounded-full blur-3xl" />

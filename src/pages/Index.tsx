@@ -9,10 +9,12 @@ import { FAQ } from "@/components/sections/FAQ";
 import { Contact } from "@/components/sections/Contact";
 import { Footer } from "@/components/sections/Footer";
 import { FloatingContacts } from "@/components/FloatingContacts";
+import { Navigation } from "@/components/Navigation";
 
 const Index = () => {
   return (
     <main className="min-h-screen">
+      <Navigation />
       <Hero />
       <Benefits />
       <HowItWorks />

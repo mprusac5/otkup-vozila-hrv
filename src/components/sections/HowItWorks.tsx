@@ -1,4 +1,5 @@
 import { Phone, Search, Banknote } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const steps = [
   {
@@ -22,8 +23,16 @@ const steps = [
 ];
 
 export const HowItWorks = () => {
+  const { elementRef, isVisible } = useScrollAnimation();
+  
   return (
-    <section className="py-16 sm:py-20 md:py-24 bg-secondary relative overflow-hidden" id="how-it-works">
+    <section 
+      ref={elementRef}
+      id="how-it-works" 
+      className={`py-16 sm:py-20 md:py-24 bg-secondary relative overflow-hidden transition-all duration-1000 ${
+        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+      }`}
+    >
       {/* Decorative background */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-20 w-72 h-72 bg-primary rounded-full blur-3xl" />

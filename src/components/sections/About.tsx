@@ -1,8 +1,17 @@
 import { Building2, Shield, Users, Target, Award, TrendingUp } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 export const About = () => {
+  const { elementRef, isVisible } = useScrollAnimation();
+  
   return (
-    <section className="py-16 sm:py-20 md:py-24 bg-gradient-to-b from-secondary to-background" id="about">
+    <section 
+      ref={elementRef}
+      id="about" 
+      className={`py-16 sm:py-20 md:py-24 bg-gradient-to-b from-secondary to-background transition-all duration-1000 ${
+        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+      }`}
+    >
       <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
         <div className="text-center mb-12 sm:mb-16 animate-fade-in">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-foreground">
