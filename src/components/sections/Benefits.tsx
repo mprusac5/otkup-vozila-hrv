@@ -1,5 +1,6 @@
 import { Banknote, Car, FileText, MapPin, CheckCircle, Clock } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const benefits = [
   {
@@ -41,8 +42,16 @@ const benefits = [
 ];
 
 export const Benefits = () => {
+  const { elementRef, isVisible } = useScrollAnimation();
+  
   return (
-    <section className="py-16 sm:py-20 md:py-24 bg-gradient-to-b from-background to-secondary" id="benefits">
+    <section 
+      ref={elementRef}
+      id="benefits" 
+      className={`py-16 sm:py-20 md:py-24 bg-gradient-to-b from-background to-secondary transition-all duration-1000 ${
+        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+      }`}
+    >
       <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">

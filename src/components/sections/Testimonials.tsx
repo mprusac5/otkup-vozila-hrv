@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, Quote } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const testimonials = [
   {
@@ -33,8 +34,16 @@ const testimonials = [
 ];
 
 export const Testimonials = () => {
+  const { elementRef, isVisible } = useScrollAnimation();
+  
   return (
-    <section className="py-16 sm:py-20 md:py-24 bg-gradient-to-b from-background to-secondary relative overflow-hidden" id="testimonials">
+    <section 
+      ref={elementRef}
+      id="testimonials" 
+      className={`py-16 sm:py-20 md:py-24 bg-gradient-to-b from-background to-secondary relative overflow-hidden transition-all duration-1000 ${
+        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+      }`}
+    >
       {/* Decorative elements */}
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent" />
       
