@@ -4,7 +4,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  base: "/brzo-auto-otkup-afe96e0d/",  // 🔥 OVO MORAŠ DODATI
+  base: "/otkup-vozila-hrv/",  // 🔥 OVO MORAŠ DODATI
   server: {
     host: "::",
     port: 8080,
