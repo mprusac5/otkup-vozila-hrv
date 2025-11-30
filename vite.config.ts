@@ -2,11 +2,10 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
-import fs from "fs";
 
 export default defineConfig(({ mode }) => ({
   base: "/otkup-vozila-hrv/",
-  
+
   build: {
     outDir: "dist",
     emptyOutDir: true,
@@ -21,10 +20,12 @@ export default defineConfig(({ mode }) => ({
     react(),
     mode === "development" && componentTagger(),
 
-    // Auto-create GitHub Pages fallback (fix 404)
+    // GitHub Pages fallback for SPA
     {
-      name: "github-pages-redirect",
+      name: "github-pages-fallback",
+      enforce: "post",
       writeBundle() {
+        const fs = require("fs");
         fs.writeFileSync(
           "dist/404.html",
           `<meta http-equiv="refresh" content="0; url=/otkup-vozila-hrv/">`
