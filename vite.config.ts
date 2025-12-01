@@ -23,7 +23,7 @@ export default defineConfig(({ mode }) => ({
     // GitHub Pages fallback for SPA
     {
       name: "github-pages-fallback",
-      enforce: "post",
+      enforce: "post" as const,
       writeBundle() {
         const fs = require("fs");
         fs.writeFileSync(
@@ -31,7 +31,7 @@ export default defineConfig(({ mode }) => ({
           `<meta http-equiv="refresh" content="0; url=/otkup-vozila-hrv/">`
         );
       },
-    },
+    } as const,
   ].filter(Boolean),
 
   resolve: {
