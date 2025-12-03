@@ -4,7 +4,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  base: "/otkup-vozila-hrv/",
+  base: "/",   // ✔ DOMENA KORISTI ROOT, NE PODFOLDER!
 
   build: {
     outDir: "dist",
@@ -16,23 +16,7 @@ export default defineConfig(({ mode }) => ({
     port: 8080,
   },
 
-  plugins: [
-    react(),
-    mode === "development" && componentTagger(),
-
-    // GitHub Pages fallback for SPA
-    {
-      name: "github-pages-fallback",
-      enforce: "post" as const,
-      writeBundle() {
-        const fs = require("fs");
-        fs.writeFileSync(
-          "dist/404.html",
-          `<meta http-equiv="refresh" content="0; url=/otkup-vozila-hrv/">`
-        );
-      },
-    } as const,
-  ].filter(Boolean),
+  plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
 
   resolve: {
     alias: {
