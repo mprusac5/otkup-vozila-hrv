@@ -214,7 +214,7 @@ const handler = async (req: Request): Promise<Response> => {
       <!-- Key Benefits -->
       <div style="background: linear-gradient(135deg, #ea384c 0%, #f97316 100%); padding: 25px; border-radius: 8px; text-align: center; margin: 30px 0;">
         <p style="color: #ffffff; margin: 0; font-size: 16px; font-weight: 600; line-height: 1.6;">
-          💰 Brza procjena • 🤝 Fer ponuda • ⚡ Trenutna isplata
+          Brza procjena ⚡ Fer ponuda 🤝 Trenutna isplata 💰
         </p>
       </div>
 
