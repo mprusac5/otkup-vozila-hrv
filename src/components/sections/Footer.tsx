@@ -37,24 +37,24 @@ export const Footer = () => {
             <ul className="space-y-4">
               <li>
                 <a 
-                  href="tel:+385912345678" 
+                  href="tel:+385915594259" 
                   className="flex items-center gap-3 text-background/80 hover:text-background transition-colors group"
                 >
                   <div className="p-2 bg-primary/20 rounded-lg group-hover:bg-primary/30 transition-colors">
                     <Phone className="h-5 w-5" />
                   </div>
-                  <span>+385 91 234 5678</span>
+                  <span>+385 91 559 4259</span>
                 </a>
               </li>
               <li>
                 <a 
-                  href="mailto:otkupvozila@gmail.com" 
+                  href="mailto:otkupvozilagt@gmail.com" 
                   className="flex items-center gap-3 text-background/80 hover:text-background transition-colors group"
                 >
                   <div className="p-2 bg-primary/20 rounded-lg group-hover:bg-primary/30 transition-colors">
                     <Mail className="h-5 w-5" />
                   </div>
-                  <span className="text-sm break-all">otkupvozila@gmail.com</span>
+                  <span className="text-sm break-all">otkupvozilagt@gmail.com</span>
                 </a>
               </li>
               <li>

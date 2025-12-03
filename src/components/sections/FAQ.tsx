@@ -87,7 +87,7 @@ export const FAQ = () => {
             Kontaktirajte nas putem telefona, WhatsApp-a ili emaila — rado ćemo odgovoriti!
           </p>
           <a
-            href="tel:+385912345678"
+            href="tel:+385915594259"
             className="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-accent-foreground px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg"
           >
             Nazovite nas

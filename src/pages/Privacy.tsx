@@ -75,7 +75,7 @@ const Privacy = () => {
             <p>
               Imate pravo na pristup, ispravak ili brisanje svojih osobnih podataka. 
               Za ostvarivanje svojih prava možete nas kontaktirati putem email adrese 
-              marinprusac5@gmail.com.
+              otkupvozilagt@gmail.com.
             </p>
           </section>
 
@@ -98,8 +98,8 @@ const Privacy = () => {
               Za sva pitanja vezana uz ovu politiku privatnosti možete nas kontaktirati na:
             </p>
             <ul className="list-none space-y-1">
-              <li>📧 Email: marinprusac5@gmail.com</li>
-              <li>📞 Telefon: +385 91 234 5678</li>
+              <li>📧 Email: otkupvozilagt@gmail.com</li>
+              <li>📞 Telefon: +385 91 559 4259</li>
             </ul>
           </section>
 
