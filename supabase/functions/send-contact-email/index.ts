@@ -248,7 +248,7 @@ const handler = async (req: Request): Promise<Response> => {
 </html>`;
 
     const clientEmailResponse = await resend.emails.send({
-      from: "Otkup Automobila <onboarding@resend.dev>",
+      from: "Otkup Automobila <noreply@otkupvozilahrv.eu>",
       to: [data.email],
       subject: "Zaprimili smo Vaš upit - Otkup Automobila",
       html: clientEmailHtml,
