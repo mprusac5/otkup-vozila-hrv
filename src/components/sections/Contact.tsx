@@ -349,12 +349,12 @@ export const Contact = () => {
         <p style="margin: 8px 0; color: #1a1a1a;">
           <span style="font-size: 18px;">📞</span> 
           <strong style="color: #4a5568;">Telefon:</strong> 
-          <span style="color: #ea384c; font-weight: 600;">+385 91 234 5678</span>
+          <span style="color: #ea384c; font-weight: 600;">+385 91 559 4259</span>
         </p>
         <p style="margin: 8px 0; color: #1a1a1a;">
           <span style="font-size: 18px;">✉️</span> 
           <strong style="color: #4a5568;">Email:</strong> 
-          <span style="color: #ea384c; font-weight: 600;">marinprusac5@gmail.com</span>
+          <span style="color: #ea384c; font-weight: 600;">otkupvozilagt@gmail.com</span>
         </p>
       </div>
 
@@ -559,10 +559,10 @@ export const Contact = () => {
                 <div>
                   <h4 className="font-bold text-foreground mb-2 text-lg">Telefon</h4>
                   <a 
-                    href="tel:+385912345678" 
+                    href="tel:+385915594259" 
                     className="text-primary hover:underline text-lg font-semibold"
                   >
-                    +385 91 234 5678
+                    +385 91 559 4259
                   </a>
                   <p className="text-sm text-muted-foreground mt-1">Dostupni 24/7</p>
                 </div>
@@ -575,10 +575,10 @@ export const Contact = () => {
                 <div>
                   <h4 className="font-bold text-foreground mb-2 text-lg">Email</h4>
                   <a 
-                    href="mailto:otkupvozila@gmail.com" 
+                    href="mailto:otkupvozilagt@gmail.com" 
                     className="text-primary hover:underline break-all"
                   >
-                    otkupvozila@gmail.com
+                    otkupvozilagt@gmail.com
                   </a>
                   <p className="text-sm text-muted-foreground mt-1">Odgovor u roku 24h</p>
                 </div>

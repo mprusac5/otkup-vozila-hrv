@@ -5,7 +5,7 @@ export const FloatingContacts = () => {
     <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 md:bottom-8 md:right-8 flex flex-col gap-3 z-50">
       {/* WhatsApp */}
       <a
-        href="https://wa.me/385912345678"
+        href="https://wa.me/385915594259"
         target="_blank"
         rel="noopener noreferrer"
         className="group relative bg-[#25D366] hover:bg-[#20BA5A] text-white p-3.5 sm:p-4 md:p-5 rounded-full shadow-2xl transition-all duration-300 hover:scale-110 animate-scale-in"
@@ -20,7 +20,7 @@ export const FloatingContacts = () => {
 
       {/* Viber */}
       <a
-        href="viber://chat?number=385912345678"
+        href="viber://chat?number=385915594259"
         target="_blank"
         rel="noopener noreferrer"
         className="group relative bg-[#7360F2] hover:bg-[#5F4FD1] text-white p-3.5 sm:p-4 md:p-5 rounded-full shadow-2xl transition-all duration-300 hover:scale-110 animate-scale-in"
