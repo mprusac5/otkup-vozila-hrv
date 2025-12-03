@@ -14,7 +14,8 @@ export const Hero = () => {
         <img 
           src={heroImage} 
           alt="Otkup automobila" 
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover fixed-image"
+          style={{ transform: 'none', backfaceVisibility: 'hidden' }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background/98 via-background/90 to-background/70" />
         <div className="absolute inset-0 bg-gradient-to-br from-white/90 via-white/60 to-white/20" />
@@ -79,7 +80,7 @@ export const Hero = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 animate-bounce">
+      <div className="absolute bottom-8 left-0 right-0 z-20 animate-bounce flex justify-center">
         <div className="flex flex-col items-center gap-2 cursor-pointer" onClick={scrollToContact}>
           <span className="text-muted-foreground text-sm">Saznajte više</span>
           <ArrowRight className="h-6 w-6 text-primary rotate-90" />

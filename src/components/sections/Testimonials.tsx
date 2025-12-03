@@ -106,7 +106,7 @@ export const Testimonials = () => {
           </p>
         </div>
         
-        <div className="max-w-7xl mx-auto px-4 sm:px-8">
+        <div className="max-w-7xl mx-auto px-8 sm:px-8 lg:px-12">
           <Carousel
             opts={{
               align: "start",
@@ -152,8 +152,8 @@ export const Testimonials = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="hidden sm:flex -left-12 lg:-left-16 bg-primary text-background hover:bg-primary/90 hover:scale-110 border-primary transition-all shadow-lg" />
-            <CarouselNext className="hidden sm:flex -right-12 lg:-right-16 bg-primary text-background hover:bg-primary/90 hover:scale-110 border-primary transition-all shadow-lg" />
+            <CarouselPrevious className="flex -left-2 sm:-left-12 lg:-left-16 bg-primary text-background hover:bg-primary/90 hover:scale-110 border-primary transition-all shadow-lg h-8 w-8 sm:h-10 sm:w-10" />
+            <CarouselNext className="flex -right-2 sm:-right-12 lg:-right-16 bg-primary text-background hover:bg-primary/90 hover:scale-110 border-primary transition-all shadow-lg h-8 w-8 sm:h-10 sm:w-10" />
           </Carousel>
         </div>
 
