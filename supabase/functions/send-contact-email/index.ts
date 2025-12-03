@@ -173,7 +173,8 @@ const handler = async (req: Request): Promise<Response> => {
       </p>
 
       <p style="color: #4a5568; line-height: 1.8; margin: 20px 0; font-size: 15px;">
-        Primili smo Vaš zahtjev za ponudu i zahvaljujemo se na Vašem povjerenju. Vaš upit je trenutno u obradi, a naš stručni tim će ga detaljno razmotriti.
+        Primili smo Vaš zahtjev za ponudu i zahvaljujemo se na Vašem povjerenju. 
+        Vaš upit je trenutno u obradi i uskoro će biti razmotren.
       </p>
 
       <!-- Request Details -->
@@ -203,8 +204,8 @@ const handler = async (req: Request): Promise<Response> => {
       <div style="background-color: #f8fafc; padding: 20px; margin: 25px 0; border-radius: 6px;">
         <h3 style="color: #ea384c; margin: 0 0 15px 0; font-size: 18px; font-weight: 600;">🔄 Što slijedi?</h3>
         <ul style="margin: 0; padding-left: 20px; color: #4a5568; line-height: 1.8;">
-          <li style="margin: 8px 0;">Naš tim će pregledati vašu prijavu u najkraćem roku</li>
-          <li style="margin: 8px 0;">Kontaktirat ćemo vas putem telefona ili emaila u roku od 24 sata</li>
+          <li style="margin: 8px 0;">Pregledat ćemo Vašu ponudu u najkraćem roku</li>
+          <li style="margin: 8px 0;">Kontaktirat ćemo Vas putem telefona ili emaila u roku od 24 sata</li>
           <li style="margin: 8px 0;">Dogovorit ćemo pregled vozila na lokaciji koja vama odgovara</li>
           <li style="margin: 8px 0;">Nakon pregleda, odmah ćete dobiti konkretnu ponudu</li>
         </ul>
@@ -240,7 +241,7 @@ const handler = async (req: Request): Promise<Response> => {
     <!-- Footer -->
     <div style="background-color: #f8fafc; padding: 30px; text-align: center; border-top: 1px solid #e2e8f0;">
       <p style="color: #64748b; margin: 0 0 5px 0; font-size: 14px;">S poštovanjem,</p>
-      <p style="color: #ea384c; margin: 0; font-size: 16px; font-weight: 700;">Otkup Automobila tim</p>
+      <p style="color: #ea384c; margin: 0; font-size: 16px; font-weight: 700;">Otkup Automobila</p>
     </div>
 
   </div>
