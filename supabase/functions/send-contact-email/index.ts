@@ -139,7 +139,7 @@ const handler = async (req: Request): Promise<Response> => {
     // Send email to business owner
     const ownerEmailResponse = await resend.emails.send({
       from: "Otkup Automobila <onboarding@resend.dev>",
-      to: ["marinprusac5@gmail.com"],
+      to: ["otkupvozilagt@gmail.com"],
       subject: `🚗 Novi Upit - ${data.car_make_model} (${data.year})`,
       html: ownerEmailHtml,
     });
