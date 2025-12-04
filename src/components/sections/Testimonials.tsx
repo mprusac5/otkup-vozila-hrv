@@ -158,18 +158,18 @@ export const Testimonials = () => {
         </div>
 
         {/* Stats Section */}
-        <div className="mt-16 sm:mt-20 grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 max-w-4xl mx-auto">
-          <div className="text-center p-8 bg-background rounded-2xl shadow-lg animate-fade-in">
-            <div className="text-5xl font-bold text-primary mb-2">500+</div>
-            <div className="text-muted-foreground">Zadovoljnih klijenata</div>
+        <div className="mt-12 sm:mt-16 md:mt-20 grid grid-cols-3 gap-2 sm:gap-6 md:gap-8 max-w-4xl mx-auto">
+          <div className="text-center p-3 sm:p-6 md:p-8 bg-background rounded-xl sm:rounded-2xl shadow-lg animate-fade-in">
+            <div className="text-2xl sm:text-4xl md:text-5xl font-bold text-primary mb-1 sm:mb-2">500+</div>
+            <div className="text-[10px] sm:text-sm md:text-base text-muted-foreground">Zadovoljnih klijenata</div>
           </div>
-          <div className="text-center p-8 bg-background rounded-2xl shadow-lg animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            <div className="text-5xl font-bold text-accent mb-2">15+</div>
-            <div className="text-muted-foreground">Godina iskustva</div>
+          <div className="text-center p-3 sm:p-6 md:p-8 bg-background rounded-xl sm:rounded-2xl shadow-lg animate-fade-in" style={{ animationDelay: "0.1s" }}>
+            <div className="text-2xl sm:text-4xl md:text-5xl font-bold text-accent mb-1 sm:mb-2">15+</div>
+            <div className="text-[10px] sm:text-sm md:text-base text-muted-foreground">Godina iskustva</div>
           </div>
-          <div className="text-center p-8 bg-background rounded-2xl shadow-lg animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            <div className="text-5xl font-bold text-green-500 mb-2">4.9/5</div>
-            <div className="text-muted-foreground">Prosječna ocjena</div>
+          <div className="text-center p-3 sm:p-6 md:p-8 bg-background rounded-xl sm:rounded-2xl shadow-lg animate-fade-in" style={{ animationDelay: "0.2s" }}>
+            <div className="text-2xl sm:text-4xl md:text-5xl font-bold text-green-500 mb-1 sm:mb-2">4.9/5</div>
+            <div className="text-[10px] sm:text-sm md:text-base text-muted-foreground">Prosječna ocjena</div>
           </div>
         </div>
       </div>
