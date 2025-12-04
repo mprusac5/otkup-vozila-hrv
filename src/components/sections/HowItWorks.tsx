@@ -54,7 +54,7 @@ export const HowItWorks = () => {
           </div>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-12 max-w-6xl mx-auto">
+        <div className="grid grid-cols-3 gap-2 sm:gap-6 md:gap-12 max-w-6xl mx-auto">
           {steps.map((step, index) => (
             <div 
               key={index} 
@@ -66,19 +66,19 @@ export const HowItWorks = () => {
                 <div className="hidden md:block absolute top-16 left-[60%] w-[80%] h-1 bg-gradient-to-r from-primary/30 to-transparent" />
               )}
               
-              <div className="relative bg-background rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 border-transparent hover:border-primary/20">
-                <div className="relative mb-6">
-                  <div className={`w-24 h-24 mx-auto bg-gradient-to-br ${step.gradient} rounded-2xl flex items-center justify-center shadow-lg`}>
-                    <step.icon className="h-12 w-12 text-white" />
+              <div className="relative bg-background rounded-xl sm:rounded-2xl p-3 sm:p-5 md:p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 border-transparent hover:border-primary/20">
+                <div className="relative mb-2 sm:mb-4 md:mb-6">
+                  <div className={`w-12 h-12 sm:w-16 sm:h-16 md:w-24 md:h-24 mx-auto bg-gradient-to-br ${step.gradient} rounded-xl sm:rounded-2xl flex items-center justify-center shadow-lg`}>
+                    <step.icon className="h-6 w-6 sm:h-8 sm:w-8 md:h-12 md:w-12 text-white" />
                   </div>
-                  <div className="absolute -top-2 -right-2 w-10 h-10 bg-accent rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg">
+                  <div className="absolute -top-1 -right-1 sm:-top-2 sm:-right-2 w-5 h-5 sm:w-7 sm:h-7 md:w-10 md:h-10 bg-accent rounded-full flex items-center justify-center text-white font-bold text-xs sm:text-sm md:text-lg shadow-lg">
                     {index + 1}
                   </div>
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-foreground text-center">
+                <h3 className="text-xs sm:text-base md:text-2xl font-bold mb-1 sm:mb-2 md:mb-4 text-foreground text-center leading-tight">
                   {step.title}
                 </h3>
-                <p className="text-muted-foreground leading-relaxed text-center">
+                <p className="text-[10px] sm:text-xs md:text-base text-muted-foreground leading-relaxed text-center hidden sm:block">
                   {step.description}
                 </p>
               </div>

@@ -62,21 +62,21 @@ export const Benefits = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6 md:gap-8 max-w-6xl mx-auto">
           {benefits.map((benefit, index) => (
             <Card 
               key={index} 
               className="border-border hover:border-primary/50 transition-all duration-300 hover-lift bg-background/80 backdrop-blur-sm animate-scale-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <CardContent className="p-8 text-center">
-                <div className={`inline-flex p-4 rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10 mb-6`}>
-                  <benefit.icon className={`h-10 w-10 ${benefit.color}`} />
+              <CardContent className="p-3 sm:p-5 md:p-8 text-center">
+                <div className={`inline-flex p-2 sm:p-3 md:p-4 rounded-xl sm:rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10 mb-3 sm:mb-4 md:mb-6`}>
+                  <benefit.icon className={`h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 ${benefit.color}`} />
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-foreground">
+                <h3 className="text-sm sm:text-base md:text-xl font-bold mb-1 sm:mb-2 md:mb-3 text-foreground leading-tight">
                   {benefit.title}
                 </h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-xs sm:text-sm md:text-base text-muted-foreground leading-relaxed">
                   {benefit.description}
                 </p>
               </CardContent>
